@@ -1,21 +1,17 @@
 {
   "dirs": {
     "proposed-toy-synthetic": {
-      "execution_id": "15f70056-4e21-4a77-ade8-3cd8e7fd2346",
-      "backend": "seyval",
+      "execution_id": "34616101547",
+      "backend": "github_actions",
       "commit_hash": "b2d08db064c0e6d6e3b40b4058af5cb58cd6ffa5",
       "overrides": {
-        "run": "proposed-toy-synthetic",
-        "results_dir": ".research/results",
-        "mode": "sanity",
-        "RUN_ID": "proposed-toy-synthetic",
-        "run_ids": "[proposed-toy-synthetic]"
+        "mode": "sanity"
       },
       "parameters": {},
       "files": {
         ".research/results/proposed-toy-synthetic/eval_inputs/classification.json": "53578cdc346c018f709da70f5698063eca9630b9e7bf5a7a4a5e96562eff7ba9",
-        ".research/results/proposed-toy-synthetic/evaluation/classification.json": "c65cda89c8549dc0093a901a2447b04c4f2e402efbbb012500ba37a045721672",
-        ".research/results/proposed-toy-synthetic/metrics.json": "fee405711c92bb1968ea1387a1e33e5c6a9c04fb7400ec3684a74b1ccd4e5d86"
+        ".research/results/proposed-toy-synthetic/metrics.json": "fee405711c92bb1968ea1387a1e33e5c6a9c04fb7400ec3684a74b1ccd4e5d86",
+        ".research/results/proposed-toy-synthetic/evaluation/classification.json": "c65cda89c8549dc0093a901a2447b04c4f2e402efbbb012500ba37a045721672"
       }
     }
   }
