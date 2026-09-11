@@ -15,7 +15,12 @@ def _argv(key: str, default: str) -> str:
 
 def main() -> None:
     results_dir = Path(_argv("results_dir", ".research/results"))
-    run_ids = json.loads(_argv("run_ids", "[]"))
+    # Hydra list syntax, quoted or not: '["a","b"]' or [a,b].
+    run_ids = [
+        item.strip().strip("\"'")
+        for item in _argv("run_ids", "[]").strip().strip("[]").split(",")
+        if item.strip()
+    ]
     for run_id in run_ids:
         run_dir = results_dir / run_id
         metrics: dict[str, float] = {}
